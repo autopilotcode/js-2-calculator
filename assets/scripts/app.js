@@ -1,17 +1,21 @@
-//code will be parsed once, but function
-//as many time as needed
 const defaultResult = 0;
 
 let currentResult = defaultResult;
 
-//will read global variables instead of arguments
+function getUserNumberInput () {
+    return parseInt(userInput.value);
+}
+
 function add() {
-    currentResult = currentResult + userInput.value;
-    outputResult(currentResult, '');
+    const enteredNumber = getUserNumberInput();
+    const calcDescription = `${currentResult} + ${enteredNumber}`; 
+    currentResult = currentResult + enteredNumber;
+    outputResult(currentResult, calcDescription);
 
 }
 
 addBtn.addEventListener('click', add);
+
 
 
 
