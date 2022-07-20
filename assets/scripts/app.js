@@ -5,7 +5,7 @@ let currentResult = defaultResult;
 let logEntries = [];
 
 function getUserNumberInput() {
-  return parseInt(userInput.value); 
+  return parseInt(userInput.value);
 }
 
 function createAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
@@ -32,20 +32,27 @@ function writeToLog(
   console.log(logEntries);
 }
 
-function add() {
+function calculateResult(calculationType) {
   const enteredNumber = getUserNumberInput();
   const initialResult = currentResult;
-  currentResult += enteredNumber;
-  createAndWriteOutput("+", initialResult, enteredNumber);
-  writeToLog("ADD", initialResult, enteredNumber, currentResult);
+  let mathOperator;
+  if (calculationType === "ADD") {
+    currentResult += enteredNumber;
+    mathOperator = "+";
+  } else {
+    currentResult -= enteredNumber;
+    mathOperator = "-";
+  }
+  createAndWriteOutput(mathOperator, initialResult, enteredNumber);
+  writeToLog(calculationType, initialResult, enteredNumber, currentResult);
+}
+
+function add() {
+  calculateResult("ADD");
 }
 
 function substract() {
-  const enteredNumber = getUserNumberInput();
-  const initialResult = currentResult;
-  currentResult -= enteredNumber;
-  createAndWriteOutput("-", initialResult, enteredNumber);
-  writeToLog("SUBSTRACT", initialResult, enteredNumber, currentResult);
+  calculateResult("SUBSTRACT");
 }
 
 function multiply() {
@@ -68,4 +75,3 @@ addBtn.addEventListener("click", add);
 subtractBtn.addEventListener("click", substract);
 multiplyBtn.addEventListener("click", multiply);
 divideBtn.addEventListener("click", divide);
-
