@@ -5,7 +5,7 @@ let currentResult = defaultResult;
 let logEntries = [];
 
 function getUserNumberInput() {
-  return parseInt(userInput.value); //to receive integer
+  return parseInt(userInput.value); 
 }
 
 function createAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
