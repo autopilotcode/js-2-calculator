@@ -35,12 +35,12 @@ function writeToLog(
 function calculateResult(calculationType) {
   const enteredNumber = getUserNumberInput();
   if (
-    calculationType !== "ADD" &&
-    calculationType !== "SUBSTRACT" &&
-    calculationType !== "MULTIPLY" &&
-    calculationType !== "DIVIDE" ||
+    (calculationType !== "ADD" &&
+      calculationType !== "SUBSTRACT" &&
+      calculationType !== "MULTIPLY" &&
+      calculationType !== "DIVIDE") ||
     //enteredNumber === 0
-    !enteredNumber           //(check if NOT true) (if it zero it treated as false)
+    !enteredNumber //(check if NOT true) (if it zero it treated as false)
   ) {
     return; //stop function execution
   }
@@ -49,23 +49,23 @@ function calculateResult(calculationType) {
   // calculationType === "SUBSTRACT" ||
   // calculationType === "MULTIPLY" ||
   // calculationType === "DIVIDE") {
-    const initialResult = currentResult;
-    let mathOperator;
-    if (calculationType === "ADD") {
-      currentResult += enteredNumber;
-      mathOperator = "+";
-    } else if (calculationType === "SUBSTRACT") {
-      currentResult -= enteredNumber;
-      mathOperator = "-";
-    } else if (calculationType === "MULTIPLY") {
-      currentResult *= enteredNumber;
-      mathOperator = "*";
-    } else if (calculationType === "DIVIDE") {
-      currentResult /= enteredNumber;
-      mathOperator = "/";
-    }
-    createAndWriteOutput(mathOperator, initialResult, enteredNumber);
-    writeToLog(calculationType, initialResult, enteredNumber, currentResult);
+  const initialResult = currentResult;
+  let mathOperator;
+  if (calculationType === "ADD") {
+    currentResult += enteredNumber;
+    mathOperator = "+";
+  } else if (calculationType === "SUBSTRACT") {
+    currentResult -= enteredNumber;
+    mathOperator = "-";
+  } else if (calculationType === "MULTIPLY") {
+    currentResult *= enteredNumber;
+    mathOperator = "*";
+  } else if (calculationType === "DIVIDE") {
+    currentResult /= enteredNumber;
+    mathOperator = "/";
+  }
+  createAndWriteOutput(mathOperator, initialResult, enteredNumber);
+  writeToLog(calculationType, initialResult, enteredNumber, currentResult);
   // }
 }
 
