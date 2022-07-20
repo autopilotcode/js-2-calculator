@@ -1,0 +1,60 @@
+[33mcommit 6b91c968ad82f70143fa9c01681e85ff942f5caf[m[33m ([m[1;36mHEAD -> [m[1;32mdev[m[33m)[m
+Author: Andrii Falieiev <falieievandrii@gmail.com>
+Date:   Wed Jul 20 17:31:49 2022 +0300
+
+    use if, else
+
+[33mcommit fc14f4d5dcf3189cfbf52f342c132172a5672bfa[m[33m ([m[1;31morigin/dev[m[33m)[m
+Author: Andrii Falieiev <falieievandrii@gmail.com>
+Date:   Wed Jul 20 14:45:47 2022 +0300
+
+    finished Module 3 Development & Debugging
+
+[33mcommit 8ead9f97261d6d165177e1b7c4be0961e8d8c615[m
+Merge: 7259671 25cfa68
+Author: Andrii Falieiev <falieievandrii@gmail.com>
+Date:   Sun Jul 17 17:37:44 2022 +0300
+
+    Merge remote-tracking branch 'origin' into dev
+
+[33mcommit 7259671a9955c2ec82bbba072922cd3a3370453e[m
+Author: Andrii Falieiev <falieievandrii@gmail.com>
+Date:   Sun Jul 17 17:33:05 2022 +0300
+
+    before console.log test
+
+[33mcommit 25cfa68ae0cc831d98176ceccfa84e5ff10af0a8[m
+Author: Andrii-Falieiev <105938348+autopilotcode@users.noreply.github.com>
+Date:   Fri Jul 15 12:04:35 2022 -0400
+
+    Delete .gitignore
+
+[33mcommit f2dda6746532ecc76f55d3f17244c8dd50980b08[m
+Author: Andrii-Falieiev <105938348+autopilotcode@users.noreply.github.com>
+Date:   Thu Jul 14 17:32:14 2022 -0400
+
+    Update README.md
+
+[33mcommit b4b7f7fb84e1fc4825f55ff9be5e9803ae03fc05[m
+Author: Andrii Falieiev <falieievandrii@gmail.com>
+Date:   Thu Jul 14 14:25:01 2022 +0300
+
+    finished Splitting Code Into Functions l.30
+
+[33mcommit 6f64f2bb5184b172a7eeb62628b9fa1f5d4e4fc0[m
+Author: Andrii Falieiev <falieievandrii@gmail.com>
+Date:   Wed Jul 13 21:57:42 2022 +0300
+
+    finished Execution Functions 'Indirectly' (28)
+
+[33mcommit ee937efd2cc76b9a3e572195da5ad7c2f9899cb1[m
+Author: Andrii Falieiev <falieievandrii@gmail.com>
+Date:   Wed Jul 13 13:35:32 2022 +0300
+
+    add calculator starting code
+
+[33mcommit 2952d69cb414b1958e63351eb2b07ce8de74130a[m
+Author: Andrii-Falieiev <105938348+autopilotcode@users.noreply.github.com>
+Date:   Wed Jul 13 03:22:37 2022 -0400
+
+    Initial commit
